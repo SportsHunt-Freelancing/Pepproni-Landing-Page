@@ -33,5 +33,10 @@
   },
   "optionalDependencies": {
     "@rollup/rollup-win32-x64-msvc": "^4.46.1"
+  },
+  "homepage": "https://SportsHunt-Freelancing.github.io/Pepproni-Landing-Page",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SportsHunt-Freelancing/Pepproni-Landing-Page.git"
   }
 }
