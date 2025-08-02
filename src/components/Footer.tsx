@@ -1,13 +1,9 @@
 import logoImg from '../assets/images/logo-6bd046.png';
 import logoTextImg from '../assets/images/logo-text-694e40.png';
-import social1 from '../assets/images/footer-social-1.svg';
-import social2 from '../assets/images/footer-social-2.svg';
-import social3 from '../assets/images/footer-social-3.svg';
-import social4 from '../assets/images/footer-social-4.svg';
-import social5 from '../assets/images/footer-social-5.svg';
-import social6 from '../assets/images/footer-social-6.svg';
-import social7 from '../assets/images/footer-social-7.svg';
-import social8 from '../assets/images/footer-social-8.svg';
+import linkedinIcon from '../assets/linkedin.svg';
+import instagramIcon from '../assets/insta.svg';
+import xIcon from '../assets/x.svg';
+import facebookIcon from '../assets/facebook.svg';
 
 const Footer = () => {
   // Image imports
@@ -58,10 +54,10 @@ const Footer = () => {
           {/* Bottom Row: Social Icons and Copyright */}
           <div className="flex flex-col gap-4 items-end mt-24 justify-end">
             <div className="flex flex-row gap-4">
-              <a href="#" className="hover:opacity-80"><img src={social1} alt="LinkedIn" className="w-8 h-8" /></a>
-              <a href="#" className="hover:opacity-80"><img src={social2} alt="Instagram" className="w-8 h-8" /></a>
-              <a href="#" className="hover:opacity-80"><img src={social3} alt="X" className="w-8 h-8" /></a>
-              <a href="#" className="hover:opacity-80"><img src={social4} alt="Facebook" className="w-8 h-8" /></a>
+              <a href="https://www.linkedin.com/company/pepproni/" className="hover:opacity-80"><img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" /></a>
+              <a href="https://www.instagram.com/pepproni.in" className="hover:opacity-80"><img src={instagramIcon} alt="Instagram" className="w-8 h-8" /></a>
+              <a href="https://x.com/pepproni_in?s=21" className="hover:opacity-80"><img src={xIcon} alt="X" className="w-8 h-8" /></a>
+              <a href="https://www.facebook.com/share/1CLZtUaYfh/?mibextid=wwXIfr" className="hover:opacity-80"><img src={facebookIcon} alt="Facebook" className="w-8 h-8" /></a>
             </div>
             <span className="font-satoshi text-white text-[1rem] md:text-[16px] font-normal leading-[1.5]">©2025 Pepproni™, All Rights Reserved.</span>
           </div>
