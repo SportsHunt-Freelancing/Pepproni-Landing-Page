@@ -76,22 +76,40 @@ return (
                     </p>
                 </div>
                 
-                <div className="space-y-12 lg:space-y-16">
+                <div className="relative">
                     {steps.map((step, index) => (
-                        <div key={index} className="flex items-start gap-6 lg:gap-8">
-                            <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 bg-[#D9D9D9] border-2 border-[#D8D8D8] rounded-full flex items-center justify-center">
-                                <span className="text-[#2CBCC4] font-linear-grotesk font-bold text-lg sm:text-xl">
-                                    {step.number}
-                                </span>
+                        <div key={index} className="relative">
+                            {/* Step Item */}
+                            <div className={`relative z-10 flex items-center gap-6 lg:gap-7 ${index > 0 ? 'mt-8 lg:mt-12' : ''}`}>
+                                {/* Step Number Container - Responsive sizing */}
+                                <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-[67px] lg:h-[67px] bg-[#D9D9D9] border-2 border-[#D8D8D8] rounded-full flex items-center justify-center">
+                                    <span className="text-[#2CBCC4] font-linear-grotesk font-bold text-lg sm:text-xl lg:text-[22px] lg:leading-[1.44]">
+                                        {step.number}
+                                    </span>
+                                </div>
+                                
+                                {/* Step Text Container */}
+                                <div className="flex-1 max-w-md lg:max-w-[482px] pt-2 sm:pt-3 lg:pt-0">
+                                    <h3 className="text-xl sm:text-2xl lg:text-[24px] font-satoshi font-normal lg:font-normal text-[#4D4D4D] mb-3 lg:mb-0 lg:leading-[1.35]">
+                                        {step.title}
+                                    </h3>
+                                    <p className="text-sm sm:text-base lg:text-[16px] font-satoshi font-normal text-[#858585] leading-relaxed lg:leading-[1.35] lg:mt-0">
+                                        {step.description}
+                                    </p>
+                                </div>
                             </div>
-                            <div className="flex-1 pt-2 sm:pt-3">
-                                <h3 className="text-xl sm:text-2xl font-satoshi text-[#4D4D4D] mb-3 lg:mb-4">
-                                    {step.title}
-                                </h3>
-                                <p className="text-sm sm:text-base font-satoshi text-[#858585] leading-relaxed max-w-md lg:max-w-lg">
-                                    {step.description}
-                                </p>
-                            </div>
+                            
+                            {/* Connecting Line - Floating in the middle between circles */}
+                            {index < steps.length - 1 && (
+                                <div 
+                                    className="absolute left-[28px] sm:left-[32px] lg:left-[33px] w-[1px] h-[20px] sm:h-[24px] lg:h-[30px] bg-[#D8D8D8] z-0"
+                                    style={{ 
+                                        transform: 'translateX(-0.5px)',
+                                        top: '100%',
+                                        marginTop: '10px'
+                                    }}
+                                />
+                            )}
                         </div>
                     ))}
                 </div>
