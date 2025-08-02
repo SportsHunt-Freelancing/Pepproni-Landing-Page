@@ -26,9 +26,9 @@ const Navbar = () => {
                 Contact
               </a>
             </div>
-            <button className="bg-[#2CBCC4] hover:bg-[#2CBCC4]/90 text-[#FBFBFB] px-4 sm:px-6 lg:px-8 py-3 lg:py-4 rounded-xl font-satoshi font-medium text-sm sm:text-base lg:text-lg transition-colors duration-200 shadow-lg whitespace-nowrap">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3OzUaXvim5ZumXtWlcLbxA4hy5TQbYoFJJwHgOQNjgM3pkg/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="bg-[#2CBCC4] hover:bg-[#2CBCC4]/90 text-[#FBFBFB] px-4 sm:px-6 lg:px-8 py-3 lg:py-4 rounded-xl font-satoshi font-medium text-sm sm:text-base lg:text-lg transition-colors duration-200 shadow-lg whitespace-nowrap">
               Join the Waitlist
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -259,9 +259,9 @@ const HeroSection = () => {
             <p className="hero-cta-text text-lg sm:text-xl font-normal text-white mb-4 md:mb-5">
               We'll be ready soon - but in the meantime,
             </p>
-            <button className="join-revolution-btn bg-[#2CBCC4] text-[#FBFBFB] border-none py-3 sm:py-4 md:py-[18px] px-8 sm:px-12 md:px-[57px] rounded-xl text-lg sm:text-xl font-medium cursor-pointer transition-colors duration-300 hover:bg-[#25a8b0] w-full sm:w-auto">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3OzUaXvim5ZumXtWlcLbxA4hy5TQbYoFJJwHgOQNjgM3pkg/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="join-revolution-btn bg-[#2CBCC4] text-[#FBFBFB] border-none py-3 sm:py-4 md:py-[18px] px-8 sm:px-12 md:px-[57px] rounded-xl text-lg sm:text-xl font-medium cursor-pointer transition-colors duration-300 hover:bg-[#25a8b0] w-full sm:w-auto">
               Join the Revolution
-            </button>
+            </a>
           </div>
         </div>
       </div>

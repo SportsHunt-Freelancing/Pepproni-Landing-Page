@@ -23,9 +23,9 @@ const Footer = () => {
           </div>
           <h3 className="font-satoshi text-[2rem] md:text-[32px] text-[#4E4E4E] mb-2 font-normal leading-[1.35]">Ready to start <span className="font-bold">building wealth?</span></h3>
           <p className="font-satoshi text-[1rem] md:text-[16px] text-[#838383] mb-6 font-medium leading-[1.35]">Gain access to early bird perks & more!</p>
-          <button className="bg-[#2CBCC4] hover:bg-[#2CBCC4]/90 text-white rounded-xl font-satoshi font-medium text-[1.25rem] md:text-[20px] leading-[1.35] transition-colors duration-200 px-8 py-4 w-full md:w-[232px]" style={{ height: 56 }}>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3OzUaXvim5ZumXtWlcLbxA4hy5TQbYoFJJwHgOQNjgM3pkg/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="bg-[#2CBCC4] hover:bg-[#2CBCC4]/90 text-white rounded-xl font-satoshi font-medium text-[1.25rem] md:text-[20px] leading-[1.35] transition-colors duration-200 px-8 py-4 w-full md:w-[232px]" style={{ height: 56 }}>
             Join the Waitlist
-          </button>
+          </a>
         </div>
         
         {/* Right Section: Full height with top/bottom alignment - Hugged to right */}

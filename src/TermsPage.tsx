@@ -21,9 +21,9 @@ function TermsPage() {
           We’ll be ready soon - but in the meantime,
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mb-10">
-          <button className="bg-[#2CBCC4] hover:bg-[#2CBCC4]/90 text-[#FBFBFB] px-6 py-3 rounded-xl font-satoshi font-medium text-lg transition-colors duration-200 shadow-lg w-full sm:w-auto" onClick={() => window.open('https://forms.gle/your-waitlist-link', '_blank')}>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3OzUaXvim5ZumXtWlcLbxA4hy5TQbYoFJJwHgOQNjgM3pkg/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="bg-[#2CBCC4] hover:bg-[#2CBCC4]/90 text-[#FBFBFB] px-6 py-3 rounded-xl font-satoshi font-medium text-lg transition-colors duration-200 shadow-lg w-full sm:w-auto">
             Join the Revolution
-          </button>
+          </a>
           <button className="bg-[#2A2A2A] hover:bg-[#2A2A2A]/90 text-[#FBFBFB] px-6 py-3 rounded-xl font-satoshi font-medium text-lg transition-colors duration-200 shadow-lg w-full sm:w-auto" onClick={() => navigate('/')}>Back to Home</button>
         </div>
       </main>
