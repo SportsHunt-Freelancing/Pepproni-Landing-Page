@@ -11,7 +11,6 @@ function App() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
-
       <HowItWorksStepsSection />
       <BehindTheBuildSection />
       <FeaturesSection />

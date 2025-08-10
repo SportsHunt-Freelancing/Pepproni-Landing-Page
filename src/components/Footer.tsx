@@ -9,10 +9,10 @@ const Footer = () => {
   // Image imports
 
   return (
-    <footer className="w-full px-4 md:px-10 py-8 flex flex-col items-center" style={{ backgroundColor: '#2CBCC4', boxShadow: '0px 1px 0px #F0F0F0' }}>
-      <div className="w-full max-w-[1440px] flex flex-col md:flex-row justify-between items-stretch gap-8 md:gap-[41px] min-h-[400px] md:min-h-[320px]">
+    <footer className="w-full px-4 md:px-10 py-6 md:py-8 flex flex-col items-center" style={{ backgroundColor: '#2CBCC4', boxShadow: '0px 1px 0px #F0F0F0' }}>
+      <div className="w-full max-w-[1440px] flex flex-col md:flex-row justify-between items-stretch gap-6 md:gap-[41px] min-h-[auto] md:min-h-[320px]">
         {/* Left Card Section - Hugged to left with minimal margin */}
-        <div className="flex flex-col justify-center bg-white rounded-2xl px-6 md:px-14 py-8 md:py-12 mb-6 md:mb-0" style={{ minWidth: 320, maxWidth: 549, flex: '0 0 auto', marginLeft: 'clamp(0px, 2.5vw, 36px)' }}>
+        <div className="flex flex-col justify-center bg-white rounded-2xl px-4 sm:px-6 md:px-14 py-6 sm:py-8 md:py-12 mb-6 md:mb-0" style={{ width: '100%', maxWidth: 549, flex: '1 1 auto', marginLeft: 0, marginRight: 0, marginBottom: '1rem' }}>
           <div className="flex flex-row items-center gap-2 mb-4">
             <img src={logoImg} alt="Pepproni Logo" className="w-[24px] h-[24px] rounded" />
             <span className="font-satoshi text-[18px] font-medium text-[#2CBCC4] tracking-wide">PEPPRONI</span>
@@ -27,10 +27,10 @@ const Footer = () => {
         {/* Right Section: Full height with top/bottom alignment - Hugged to right */}
         <div className="flex flex-col justify-between flex-1 h-full" style={{ marginRight: 'clamp(0px, .5vw, 6px)' }}>
           {/* Top Row: 3 columns - Hugged to top */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-12 w-full">
             {/* Important Links */}
             <div className="flex flex-col">
-              <span className="font-satoshi text-white text-[1rem] md:text-[14px] mb-2 font-normal leading-[1.35]">Important Links</span>
+              <span className="font-satoshi text-white text-[14px] md:text-[14px] mb-2 font-normal leading-[1.35]">Important Links</span>
               <a href="/terms" className="font-satoshi text-white text-[1.1rem] md:text-[15px] font-medium leading-[1.35] mb-1 hover:underline">Terms and Conditions</a>
               <a href="#" className="font-satoshi text-white text-[1.1rem] md:text-[15px] font-medium leading-[1.35] hover:underline">Privacy Policy</a>
             </div>
@@ -52,14 +52,14 @@ const Footer = () => {
           </div>
           
           {/* Bottom Row: Social Icons and Copyright */}
-          <div className="flex flex-col gap-4 items-end mt-24 justify-end">
-            <div className="flex flex-row gap-4">
-              <a href="https://www.linkedin.com/company/pepproni/" className="hover:opacity-80"><img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" /></a>
-              <a href="https://www.instagram.com/pepproni.in" className="hover:opacity-80"><img src={instagramIcon} alt="Instagram" className="w-8 h-8" /></a>
-              <a href="https://x.com/pepproni_in?s=21" className="hover:opacity-80"><img src={xIcon} alt="X" className="w-8 h-8" /></a>
-              <a href="https://www.facebook.com/share/1CLZtUaYfh/?mibextid=wwXIfr" className="hover:opacity-80"><img src={facebookIcon} alt="Facebook" className="w-8 h-8" /></a>
+          <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-end justify-between mt-12 sm:mt-16 md:mt-24 w-full">
+            <div className="flex flex-row gap-3 sm:gap-4 order-2 sm:order-1">
+              <a href="https://www.linkedin.com/company/pepproni/" className="hover:opacity-80"><img src={linkedinIcon} alt="LinkedIn" className="w-7 sm:w-8 h-7 sm:h-8" /></a>
+              <a href="https://www.instagram.com/pepproni.in" className="hover:opacity-80"><img src={instagramIcon} alt="Instagram" className="w-7 sm:w-8 h-7 sm:h-8" /></a>
+              <a href="https://x.com/pepproni_in?s=21" className="hover:opacity-80"><img src={xIcon} alt="X" className="w-7 sm:w-8 h-7 sm:h-8" /></a>
+              <a href="https://www.facebook.com/share/1CLZtUaYfh/?mibextid=wwXIfr" className="hover:opacity-80"><img src={facebookIcon} alt="Facebook" className="w-7 sm:w-8 h-7 sm:h-8" /></a>
             </div>
-            <span className="font-satoshi text-white text-[1rem] md:text-[16px] font-normal leading-[1.5]">©2025 Pepproni™, All Rights Reserved.</span>
+            <span className="font-satoshi text-white text-[14px] sm:text-[16px] font-normal leading-[1.5] order-1 sm:order-2 text-center sm:text-right">©2025 Pepproni™, All Rights Reserved.</span>
           </div>
         </div>
       </div>
